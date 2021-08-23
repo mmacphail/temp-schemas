@@ -17,9 +17,11 @@ version '1.0'
 
 repositories {
     mavenCentral()
+    maven { url 'https://jitpack.io' }
 }
 
 dependencies {
     compileOnly group: 'org.apache.avro', name: 'avro', version: '1.9.1'
     compileOnly group: 'org.apache.avro', name: 'avro-tools', version: '1.9.1'
+    implementation 'com.github.mmacphail:temp-schemas:1.0'
 }
